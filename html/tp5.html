@@ -5,41 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <title>Résultat foot</title>
+    <title>Inscription à l'université</title>
   </head>
   <body>
-    <h1>Résultat foot</h1>
+    <h1>Inscription à l'université</h1>
+    <form>
+      <div>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" placeholder="Ex : Toto" />
+      </div>
+      <div>
+        <label for="prenom">Prenom : </label>
+        <input type="text" id="prenom" placeholder="Ex : André" />
+      </div>
+      <div>
+        <label for="lieunaissance">Lieu de naissance : </label>
+        <input type="text" id="lieunaissance" placeholder="Ex : Nantes" />
+      </div>
+      <div>
+        <label for="datenaissance">Date de naissance:</label>
 
-    <table>
-      <thead>
-        <tr>
-          <th colspan="4">Score</th>
-        </tr>
-        <tr>
-          <th colspan="2">Équipe à Domicile</th>
-          <th colspan="2">Équipe à L'extérieur</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>FC Barcelone</td>
-          <td>0</td>
-          <td>PSG</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Manchester United</td>
-          <td>3</td>
-          <td>Lyon</td>
-          <td>0</td>
-        </tr>
-        <tr>
-          <td>Milan AC</td>
-          <td>1</td>
-          <td>Liverpool</td>
-          <td>1</td>
-        </tr>
-      </tbody>
-    </table>
+        <input
+          type="date"
+          id="datenaissance"
+          name="date-naissance"
+          value="dd-mm-yyyy"
+          min="01-01-1902"
+          max="18-01-2007"
+        />
+      </div>
+      <div>
+        <label for="pays">Pays : </label>
+        <select id="pays">
+          <option>-- Veuillez choisir un pays --</option>
+          <option>France</option>
+          <option>Espagne</option>
+          <option>Italie</option>
+        </select>
+      </div>
+      <div>
+        <label for="civilite">Civilité : </label><br />
+        <input type="radio" name="civilite" />Madame<br />
+        <input type="radio" name="civilite" />Monsieur<br />
+      </div>
+      <div>
+        <label for="bac">Pourcentage ou moyenne obtenu au BAC : </label>
+        <!-- <span style="background-color: lightgray">+33</span> -->
+        <input type="text" id="bac" placeholder="Ex : 15/20" />
+      </div>
+      <div>
+        <label for="pays">Formation : </label>
+        <select id="pays">
+          <option>-- Veuillez choisir une formation --</option>
+          <option>Géographie</option>
+          <option>Lettres</option>
+          <option>Sciences de la vie et de la Terre</option>
+          <option>Informatique</option>
+          <option>Droit</option>
+          <option>Chimie</option>
+          <option>Physique</option>
+          <option>Mathématiques</option>
+          <option>Sociologie</option>
+          <option>STAPS</option>
+          <option>Histoire</option>
+          <option>Histoire de l'art</option>
+          <option>Langue</option>
+          <option>Economie</option>
+          <option>Psychologie</option>
+        </select>
+      </div>
+      <div>
+        <label for="pays">Second choix de formation : </label>
+        <select id="pays">
+          <option>-- Veuillez choisir une formation --</option>
+          <option>Géographie</option>
+          <option>Lettres</option>
+          <option>Sciences de la vie et de la Terre</option>
+          <option>Informatique</option>
+          <option>Droit</option>
+          <option>Chimie</option>
+          <option>Physique</option>
+          <option>Mathématiques</option>
+          <option>Sociologie</option>
+          <option>STAPS</option>
+          <option>Histoire</option>
+          <option>Histoire de l'art</option>
+          <option>Langue</option>
+          <option>Economie</option>
+          <option>Psychologie</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Ex : zozor@gmail.com" />
+      </div>
+      <div>
+        <label for="telephone">Téléphone : </label>
+        <!-- <span style="background-color: lightgray">+33</span> -->
+        <input type="number" id="telephone" placeholder="Ex : 07777777777" />
+      </div>
+      <div>
+        <label for="lettremotivation">Lettre de motivation : </label>
+        <!-- <span style="background-color: lightgray">+33</span> -->
+        <input type="file" id="lettremotivation" accept=".pdf" />
+      </div>
+      <input type="submit" value="Envoyer" />
+    </form>
   </body>
 </html>

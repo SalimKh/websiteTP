@@ -1,7 +1,8 @@
 body {
   width: 100%;
+  height: 100%;
   background-image: url("../images/space.jpg");
-  background-size: contain;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -10,4 +11,49 @@ body {
   text-align: center;
   text-shadow: -1px -1px 0 #efda17, 1px -1px 0 #efda17, -1px 1px 0 #efda17,
     1px 1px 0 #efda17;
+}
+
+h2,
+ul,
+li {
+  text-align: center;
+  list-style-position: inside;
+}
+
+a:visited {
+  text-decoration: none;
+  color: red;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.planete {
+  background-color: #404253;
+  border-radius: 50% 50% 50% 50%;
+  width: 20em;
+  height: 20em;
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 1em;
+}
+
+#planete1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+#planete2 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
 }
