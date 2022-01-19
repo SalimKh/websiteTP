@@ -9,3 +9,49 @@ td,
 th {
   border: 1px solid #333;
 }
+
+.figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 0.3125em;
+  max-width: 13.75em;
+  margin: auto;
+}
+
+img {
+  max-width: 13.75em;
+  max-height: 9.375em;
+}
+
+.figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+aside {
+  float: right;
+  height: 100%;
+  width: 40%;
+}
+
+article {
+  float: left;
+  width: 60%;
+}
+
+h3 {
+  color: grey;
+}
+
+pre {
+  font-size: 0.8em;
+}
+
+blockquote {
+  font-style: italic;
+}
+
