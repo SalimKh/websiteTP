@@ -1,0 +1,21 @@
+.box {
+    width: 250px;
+    height: 250px;
+}
+
+.first {
+    background-color: orangered;
+    position: relative;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+}
+
+.second {
+    background-color: indianred;
+}
+
+.third {
+    background-color: indigo;
+    position: fixed;
+}

@@ -1,46 +1,78 @@
 body {
   background-color: #c8c8c8;
-  font: 1.2em "Ubuntu", sans-serif;
+  font-family: "Times New Roman", serif;
+  font-size: 1.5em;
 }
-
-
 
 h1 {
   text-align: center;
+  font-size: 3em;
 }
 
-table,
+a[href],
+h2 {
+  color: #cf0025;
+  font-weight: bolder;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
 td,
 th {
-  border: 1px solid #333;
+  padding: 0.5em;
+}
+
+th {
+  background-color: #333;
+  color: white;
+}
+
+table tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+table tr:nth-child(even) {
+  background-color: #c8c8c8;
+}
+
+table tr:hover {
+  background-color: #999999;
+  cursor: pointer;
 }
 
 .figure {
-  border: thin #c0c0c0 solid;
-  display: flex;
-  flex-flow: column;
-  padding: 0.3125em;
-  max-width: 13.75em;
-  margin: auto;
+  border: thick red solid;
+  border-radius: 0.3em;
+  background-color: #333333;
+  padding: 2em;
+  text-align: center;
 }
 
 img {
-  max-width: 13.75em;
-  max-height: 9.375em;
+  max-width: 100%;
 }
 
 .figcaption {
-  background-color: #222;
   color: #fff;
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
+  font-size: 1.5em;
 }
 
 article {
   position: relative;
   left: 10%;
   width: 80%;
+}
+
+.p-protocole {
+  color: #4e41ae;
+  background-color: #b7b7b7;
+  padding: 1em;
+  border: dashed #4e41ae;
 }
 
 h3 {

@@ -1,0 +1,40 @@
+.text {
+    border: 3px solid black;
+    height: 100px;
+    width: 150px;
+    overflow: scroll;
+}
+
+.text:hover {
+    color: orangered;
+    height: 300px;
+    width: 200px;
+    background-color: indigo;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background-color: indianred;
+    color: indigo;
+    cursor: pointer;
+}
+
+.btn:active {
+    border: 3px solid red;
+    font-size: 20px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    text-decoration: none;
+    color: red;
+}
+
+/* .nav-link:visited {
+    color: red;
+} */
