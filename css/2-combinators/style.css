@@ -1,0 +1,7 @@
+div.parent p {
+    color: red;
+}
+
+div.parent > p.zozor.roro {
+    background-color: lightgray;
+}

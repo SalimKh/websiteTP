@@ -1,7 +1,12 @@
-.important {
-  color: #00a2e1;
-  text-decoration: underline;
-  font-weight: bold;
+body {
+  background-color: #c8c8c8;
+  font: 1.2em "Ubuntu", sans-serif;
+}
+
+
+
+h1 {
+  text-align: center;
 }
 
 table,
@@ -32,15 +37,10 @@ img {
   text-align: center;
 }
 
-aside {
-  float: right;
-  height: 100%;
-  width: 40%;
-}
-
 article {
-  float: left;
-  width: 60%;
+  position: relative;
+  left: 10%;
+  width: 80%;
 }
 
 h3 {
@@ -54,4 +54,3 @@ pre {
 blockquote {
   font-style: italic;
 }
-

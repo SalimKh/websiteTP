@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+p {
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.xoxo {
+    color: red;
+}
+
+#first-p {
+    color: green;
+}
+
+#first-p {
+    color: indigo;
+}
+
+.xoxo {
+    color: red;
+    font-style: italic;
+}
+
+p {
+    color: blue;
+}
+
+p.xoxo {
+    color: red;
+}
+
+.chose {
+    color: darkolivegreen;
+}
