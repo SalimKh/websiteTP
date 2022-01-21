@@ -1,0 +1,282 @@
+html {
+  height: 100vh;
+  overflow: scroll;
+}
+
+body {
+  height: 98%;
+  padding: 1%;
+  margin: 0;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  padding: 0.5rem;
+  grid-auto-rows: minmax(min-content, auto);
+}
+
+header > div:nth-child(1) {
+  grid-area: logo;
+}
+
+header > div:nth-child(2) {
+  grid-area: services;
+}
+
+header > div:nth-child(3) {
+  grid-area: expertise;
+}
+
+header > div:nth-child(4) {
+  grid-area: contact;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-auto-rows: 5.5%;
+  grid-gap: 0;
+  grid-auto-columns: 1fr;
+}
+
+.container * {
+  border: thin solid;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-top: auto;
+  overflow: hidden;
+}
+
+.navbutton {
+  font-size: 0.5em;
+}
+
+#banner {
+  grid-area: banner;
+}
+
+#about {
+  grid-area: about;
+}
+
+#link1 {
+  grid-area: link1;
+}
+
+#link2 {
+  grid-area: link2;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      ". . . ."
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      ". . . . "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      ". . . ."
+      "link1 link1 link1 link1"
+      "link1 link1 link1 link1"
+      ". . . ."
+      "link2 link2 link2 link2"
+      "link2 link2 link2 link2"
+      ". . . ."
+      "footer footer footer footer  "
+      "footer footer footer footer  ";
+  }
+  header {
+    grid-template-areas:
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      ". . ."
+      "services services services"
+      "services services services"
+      "services services services"
+      ". . ."
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      ". . ."
+      "contact contact contact"
+      "contact contact contact"
+      "contact contact contact";
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      ". . . ."
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      ". . . . "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      ". . . ."
+      "link1 link1 link1 link1"
+      "link1 link1 link1 link1"
+      ". . . ."
+      "link2 link2 link2 link2"
+      "link2 link2 link2 link2"
+      ". . . ."
+      "footer footer footer footer  "
+      "footer footer footer footer  ";
+  }
+  header {
+    grid-template-areas:
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      ". . ."
+      "services services services"
+      "services services services"
+      "services services services"
+      ". . ."
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      ". . ."
+      "contact contact contact"
+      "contact contact contact"
+      "contact contact contact";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      "header header header header"
+      ". . . ."
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      "banner banner banner banner"
+      ". . . . "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      "about about about about "
+      ". . . ."
+      "link1 link1 link1 link1"
+      "link1 link1 link1 link1"
+      ". . . ."
+      "link2 link2 link2 link2"
+      "link2 link2 link2 link2"
+      ". . . ."
+      "footer footer footer footer  "
+      "footer footer footer footer  ";
+  }
+  header {
+    grid-template-areas:
+      "logo logo logo"
+      "logo logo logo"
+      "logo logo logo"
+      ". . ."
+      "services services services"
+      "services services services"
+      "services services services"
+      ". . ."
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      "expertise expertise expertise"
+      ". . ."
+      "contact contact contact"
+      "contact contact contact"
+      "contact contact contact";
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      ". . . . . . . . . . . ."
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      ". . . . . . . . . . . ."
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . . . . ."
+      "about about about about about about about . link2 link2 link2 link2"
+      "about about about about about about about . link2 link2 link2 link2"
+      "about about about about about about about . link2 link2 link2 link2"
+      ". . . . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+  header {
+    grid-template-areas: "logo logo logo . services services services . expertise expertise expertise . contact contact contact";
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    grid-template-areas:
+      "header header header header header header header header header header header header"
+      ". . . . . . . . . . . ."
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      "banner banner banner banner banner banner banner banner banner banner banner banner"
+      ". . . . . . . . . . . ."
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . link1 link1 link1 link1"
+      "about about about about about about about . . . . ."
+      "about about about about about about about . link2 link2 link2 link2"
+      "about about about about about about about . link2 link2 link2 link2"
+      "about about about about about about about . link2 link2 link2 link2"
+      ". . . . . . . . . . . ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer"
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+  }
+
+  header {
+    grid-template-areas: "logo logo logo . services services services . expertise expertise expertise . contact contact contact";
+  }
+}
