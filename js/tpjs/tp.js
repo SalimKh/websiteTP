@@ -334,3 +334,26 @@ function tp16() {
   }
   changeDisplay(display.innerText + "\n La somme de la diagonale est " + somme);
 }
+
+function tp20() {
+  let tableau = [2, 5, 4, 4];
+
+  function tableauRotation(matrice, sens, rot) {
+    console.log("[" + matrice + "]");
+    if (sens == "droite") {
+      for (let i = 0; i < rot; i++) {
+        matrice.unshift(matrice.pop());
+      }
+    } else if (sens == "gauche") {
+      for (let i = 0; i < rot; i++) {
+        matrice.push(matrice.shift());
+      }
+    }
+    return matrice;
+  }
+
+  tableauRotation(tableau, "droite", 3);
+  console.log("[" + tableau + "]");
+  tableauRotation(tableau, "gauche", 5);
+  console.log("[" + tableau + "]");
+}
